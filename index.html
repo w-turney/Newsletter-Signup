@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Newsletter Sign Up</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main>
+    <div class="mobile-image">
+      <img src="assets\images\illustration-sign-up-mobile.svg" alt="sign up logo">
+    </div>
+    <div class="sign-up-box">
+      <div class="left">
+        <h1>Stay Updated!</h1>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul>
+          <li><img src="assets/images/icon-success.svg" alt="tick">Product discovery and building what matters</li><br>
+          <li><img src="assets/images/icon-success.svg" alt="tick">Measuring to ensure updates are a success</li><br>
+          <li><img src="assets/images/icon-success.svg" alt="tick">And much more!</li>
+        </ul>
+        <form class="form" action="">
+          <label for="email">Email address</label>
+          <input type="email" name="email" id="email" placeholder="email@company.com" required>
+          <button type="submit" class="submit">Subscribe to monthly newsletter</button>
+        </form>
+      </div>
+      <div class="right">
+        <img src="assets\images\illustration-sign-up-desktop.svg" alt="sign up logo">
+      </div>
+    </div>
+
+    <div class="success-box">
+      <img src="assets/images/icon-success.svg" alt="tick">
+      <h1>Thanks for subscribing!</h1>
+      <p>A confirmation email has been sent to <span class="email-address"></span> Please open it and click the button inside to confirm your subscription.</p>
+      <div class="empty"></div>
+      <form>
+        <button class="dismiss">Dismiss message</button>
+      </form>
+    </div>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
